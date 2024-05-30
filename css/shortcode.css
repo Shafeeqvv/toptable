@@ -9349,17 +9349,17 @@
     padding-right: 55px;
 }
 .footer-wrap {
-    padding: 100px 0 50px;
+    padding: 50px 0 25px;
 }
 .footer-wrap .row .pbmit-footer-logo {
     text-align: left;
-    width: 250px;
+    width: 220px;
     margin: 0;
 }
 .pbmit-footer-big-area .pbmit-footer-right-box {
     text-align: left;
-    font-size: 36px;
-    line-height: 46px;
+    font-size: 26px;
+    line-height: 36px;
     color: var(--pbmit-white-color);
     font-family:var(--pbmit-heading-typography-font-family);
     font-weight: 500;
@@ -9441,7 +9441,7 @@
     color: var(--pbmit-global-color);
     text-transform: none;
     font-style: normal;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 .pbmit-footer-marketing-newsletter {
     position: relative;
@@ -9528,8 +9528,8 @@
     color: var(--pbmit-white-color);
 }
 .pbmit-footer-text-area {
-    margin-top: 70px;
-    padding: 50px 0 60px 0;
+    margin-top: 40px;
+    padding: 30px 0 30px 0;
     border-top: 1px solid rgba(255, 255, 255,.2);
 }
 .pbmit-footer-text-inner {
@@ -9746,7 +9746,7 @@
     padding: 50px 0 70px;
 }
 .footer-style-2.site-footer .widget {
-    padding-top: 30px;
+    padding-top: 10px;
 }
 .footer-style-2 .widget .widget-title {
     font-family: Marcellus,sans-serif;
