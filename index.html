@@ -57,6 +57,8 @@
       <link rel="stylesheet" type="text/css" href="revolution/rs6.css">
       <link rel="stylesheet" href="css/font-awesome.min.css">
       <link href="css/owl.carousel.min.css" rel="stylesheet">
+      <script src="js/jquery-2.1.4.js"></script>
+
    <link href="css/owl.theme.default.min.css" rel="stylesheet">
 <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="6e88e380-6178-4b45-952b-61c91566ae0b";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
 
@@ -116,8 +118,7 @@
                   <div class="container-fluid g-0">
                      <div class="row g-0">
                         <div class="col-md-12">
-                           <div class="d-flex align-items-center justify-content-between">
-                              <div class="d-flex align-items-center justify-content-between pbmit-header-content">
+                           <div class="d-flex align-items-center justify-content-between pbmit-header-content">
                                  <div class="site-branding pbmit-logo-area">
                                     <h1 class="site-title">
                                        <a href="index.html">
@@ -125,7 +126,7 @@
                                        </a>
                                     </h1>
                                  </div>
-                                 <div class="site-navigation">
+                                 <div class="site-navigation text-end">
                                     <nav class="main-menu navbar-expand-xl navbar-light">
                                        <div class="navbar-header">
                                           <button class="navbar-toggler" type="button">
@@ -145,48 +146,11 @@
                                                 <li><a href="#clients">Clients</a></li>
                                                 <li><a href="#testimonial">Testimonials</a></li>
                                                 <li><a href="#contact">Contact</a></li>
-                                                <li>
-                                                   <abbr title="Translate Languge">
-                                                   <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
-                                                    <div id="google_translate_element" class="sel-lang"></div>                      
-                                                     <script type="text/javascript">  
-                                                     function googleTranslateElementInit() {  
-                                                     new google.translate.TranslateElement(  
-                                                         {pageLanguage:'en',includedLanguages : 'ar'},  
-                                                         'google_translate_element'  
-                                                     );
-                                                      var $googleDiv = $("#google_translate_element .skiptranslate");
-                                                       var $googleDivChild = $("#google_translate_element .skiptranslate div");
-                                                       $googleDivChild.next().remove();
-
-                                                       $googleDiv.contents().filter(function(){
-                                                         return this.nodeType === 3 && $.trim(this.nodeValue) !== '';
-                                                       }).remove();
-
-                                               $(document).ready(function(){
-                                                 $('#google_translate_element').bind('DOMNodeInserted', function(event) {
-                                                   $('.goog-te-menu-value span:first').html('Translate');
-                                                   $('.goog-te-menu-frame.skiptranslate').load(function(){
-                                                     setTimeout(function(){
-                                                       $('.goog-te-menu-frame.skiptranslate').contents().find('.goog-te-menu2-item-selected .text').html('Translate');    
-                                                     }, 100);
-                                                   });
-                                                 });
-                                               });
-
-                                                 }  
-                                             </script>
-                                             <script type="text/javascript"   
-                                             src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">  
-                                             </script>
-                                          </abbr>
-                                          </li> 
                                             </ul>
                                           </div>
                                        </div>
                                     </nav>
                                  </div>
-                              </div>
                            </div>
                         </div>
                      </div>
