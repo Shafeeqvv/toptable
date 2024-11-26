@@ -168,9 +168,13 @@ INDEX:
 .pbminfotech-hide, .pbmit-hide {
     display: none;
 }
+
+/*
+
 body {
     counter-reset: pbmitbox1 pbmitbox2 pbmit-rev-counter;
-}
+}*/
+
 /*----------------------------------------*/
 /* 01 - Typography 
 /*----------------------------------------*/
