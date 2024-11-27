@@ -62,7 +62,7 @@
       <link rel="stylesheet" href="css/font-awesome.min.css">
       <link href="css/owl.carousel.min.css" rel="stylesheet">
    <link href="css/owl.theme.default.min.css" rel="stylesheet">
-   <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="6e88e380-6178-4b45-952b-61c91566ae0b";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
+  <!-- <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="6e88e380-6178-4b45-952b-61c91566ae0b";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>-->
    </head>
    <body>
       <!-- page wrapper -->
@@ -252,19 +252,76 @@
             </div>   
          </footer>
          <!-- footer End -->
-          <a href="https://api.whatsapp.com/send?phone=971521471436" class="float" target="_blank">
-<i class="fa fa-whatsapp my-float"></i>
-</a>
-         </div>
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
+      <div class="nav-bottom">
+            <div class="popup-whatsapp fadeIn">
+                <div class="content-whatsapp -top"><button type="button" class="closePopup">
+                      <i class="material-icons icon-font-color">close</i>
+                    </button>
+                    <p>Hi! 👋<br>
+
+                     Let us know how we can help you today. 😊<br>
+
+                </div>
+                <div class="content-whatsapp -bottom">
+                  <input class="whats-input" id="whats-in" type="text" Placeholder="Send message..." />
+                    <button class="send-msPopup" id="send-btn" type="button">
+                        <i class="material-icons icon-font-color--black">send</i>
+                    </button>
+
+                </div>
+            </div>
+            <button type="button" id="whats-openPopup" class="whatsapp-button">
+                <img class="icon-whatsapp" src="https://cdn-icons-png.flaticon.com/512/134/134937.png">
+            </button>
+            <div class="circle-anime"></div>
+        </div>
+
+
+        <script type="text/javascript">
+           popupWhatsApp = () => {
+  
+  let btnClosePopup = document.querySelector('.closePopup');
+  let btnOpenPopup = document.querySelector('.whatsapp-button');
+  let popup = document.querySelector('.popup-whatsapp');
+  let sendBtn = document.getElementById('send-btn');
+
+  btnClosePopup.addEventListener("click",  () => {
+    popup.classList.toggle('is-active-whatsapp-popup')
+  })
+  
+  btnOpenPopup.addEventListener("click",  () => {
+    popup.classList.toggle('is-active-whatsapp-popup')
+     popup.style.animation = "fadeIn .6s 0.0s both";
+  })
+  
+  sendBtn.addEventListener("click", () => {
+  let msg = document.getElementById('whats-in').value;
+  let relmsg = msg.replace(/ /g,"%20");
+    //just change the numbers "1515551234567" for your number. Don't use +001-(555)1234567     
+   window.open('https://wa.me/971521471436?text='+relmsg, '_blank'); 
+  
+  });
+
+  setTimeout(() => {
+    popup.classList.toggle('is-active-whatsapp-popup');
+  }, 3000);
+}
+
+popupWhatsApp();
+
+        </script>
          <!-- Page Content End -->
 
-         <!-- Scroll To Top -->
+         <!-- Scroll To Top 
          <div class="pbmit-progress-wrap pbmit-theme-textcolor-white">
             <svg class="pbmit-progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
                <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"></path>
             </svg>
          </div>
-         <!-- Scroll To Top End -->
+          Scroll To Top End -->
      
       <!-- Page Wrapper End -->
 
