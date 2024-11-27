@@ -34,8 +34,8 @@
     position:fixed;
     width:60px;
     height:60px;
-    bottom:40px;
-    left:40px;
+    bottom:10px;
+    right:40px;
     background-color:#25d366;
     color:#FFF;
     border-radius:50px;
@@ -49,7 +49,7 @@
     margin-top:16px;
 }
 
- 
+
 
 img {
     height: auto;
@@ -3272,7 +3272,7 @@ i.fa.fa-plus {
 .marketing-contact-form .form-control {
     padding-left: 0;
     height: 55px;
-    color: var(--pbmit-blackish-color);
+    color: #fff;
     border-bottom: 1px solid #991919;
 }
 .marketing-contact-form textarea.form-control {
@@ -3403,7 +3403,7 @@ padding: 15px 20px;
 .btn-style.btn-white:hover {
     color: #fff;
     background: transparent;
-    border: 0px solid #991919;
+    border: 1px solid #991919;
 }
 
 .btn-style.btn-white-1:hover{
